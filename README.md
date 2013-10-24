@@ -1,5 +1,17 @@
 # My Vim Configurations
 
+## Before
+
+### Install git (ubuntu)
+
+    sudo apt-get install git-core
+
+### Install git-subtree for install vim plugins
+
+	mkdir $HOME/git; cd $HOME/git
+	git clone git://github.com/apenwarr/git-subtree.git
+	sudo bash git-subtree/install.sh
+
 ## Usage
 
     cd $HOME
