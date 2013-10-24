@@ -537,3 +537,9 @@ let &cpo = s:cpo_save
 unlet s:cpo_save
 
 " vim:set sw=2 sts=2 ts=8 et:
+setlocal expandtab
+setlocal autowrite
+setlocal tabstop=2 shiftwidth=2 softtabstop=2
+setlocal autoindent
+
+source $HOME/.vim/ruby-macros.vim
