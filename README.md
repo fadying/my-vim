@@ -1,10 +1,13 @@
-My Vim Configurations.
+# My Vim Configurations
 
-Usage
+## Usage
 
-cd $HOME
-ls -s .vim/.vimrc .vimrc
+    cd $HOME
+    git clone https://github.com/fadying/my-vim.git .vim
+    ln -s .vim/.vimrc .vimrc
 
-cd $HOME/.vim
-bash github-plugin-install.sh tpope/vim-pathogen
+### To install or update vim plugins from github
+
+    cd $HOME/.vim
+    bash github-plugin-install.sh tpope/vim-pathogen
 
