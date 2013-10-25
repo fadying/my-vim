@@ -34,8 +34,7 @@
 - tpope/vim-pathogen
 - vim-ruby/vim-ruby
 
-snipmate-snippets will replace original snippets in snipate. Use rake to install.
+snipmate-snippets replaced original snippets in snipate. Used `rake` to install.
 
-Not known the use of this vim-markdown. There is a tpope/vim-markdown, too.
 
 

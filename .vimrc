@@ -2,6 +2,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
+autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
 autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
 
 set number
