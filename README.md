@@ -23,3 +23,19 @@
     cd $HOME/.vim
     bash github-plugin-install.sh tpope/vim-pathogen
 
+## Installed plugins for vim
+
+- mattn/emmet-vim
+- scrooloose/snipmate-snippets
+- plasticboy/vim-markdown
+- tpope/vim-rails
+- scooloose/nerdtree
+- msanders/snipmate.vim
+- tpope/vim-pathogen
+- vim-ruby/vim-ruby
+
+snipmate-snippets will replace original snippets in snipate. Use rake to install.
+
+Not known the use of this vim-markdown. There is a tpope/vim-markdown, too.
+
+
