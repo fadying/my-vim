@@ -2,6 +2,8 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
+autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
+
 set number
 set tabstop=4
 set autoindent

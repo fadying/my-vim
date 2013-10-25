@@ -11,7 +11,8 @@ set notimeout
 set smartindent
 set smarttab
 set autoindent
-set shiftwidth=2
+setlocal expandtab
+setlocal tabstop=2 shiftwidth=2
 
 noremap <buffer> K :!ruby %<CR>
 
@@ -27,10 +28,13 @@ inoremap <buffer> ' <C-R>=<SID>Double("\'","\'")<CR>
 inoremap <buffer> ( ()<Left>
 inoremap <buffer> [ <C-R>=<SID>Double("[","]")<CR>
 inoremap <buffer> { <C-R>=<SID>Double("{","}")<CR>
+inoremap <buffer> <% <C-R>=<SID>Double("<%","%>")<CR>
 
 function! s:Double(left,right)
     if strpart(getline(line(".")),col(".")-2,2) == a:left . a:right
 	return "\<Del>"
+	elseif strlen(a:right) == 2
+	return a:left . " " . a:right . "\<Left>\<Left>\<Left>"
     else
 	return a:left . a:right . "\<Left>"
     endif
