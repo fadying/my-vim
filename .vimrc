@@ -6,10 +6,14 @@ autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
 
 set number
 set tabstop=4
+set shiftwidth=4
+set expandtab
 set autoindent
 set fileencodings=utf-8,gbk,gb18030,gb2312
 colorscheme blackboard       " 适合Ruby开发的蓝色主题
 "colorscheme railscasts
+
+set hidden
 
 " An example for a vimrc file.
 "
