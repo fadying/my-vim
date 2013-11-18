@@ -85,6 +85,7 @@ iab <buffer> module <C-R>=<SID>SpecialAbbrev("module")<CR>
 iab <buffer> unless <C-R>=<SID>SpecialAbbrev("unless")<CR>
 iab <buffer> until <C-R>=<SID>SpecialAbbrev("until")<CR>
 iab <buffer> while <C-R>=<SID>SpecialAbbrev("while")<CR>
+iab <buffer> do <C-R>=<SID>SpecialAbbrev("do")<CR>
 
 function! s:SpecialAbbrev(string)
     if getline(line(".")) =~ '\S'  " Not a blank line.
