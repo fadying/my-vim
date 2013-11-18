@@ -3,6 +3,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
+autocmd BufNewFile,BufRead *.jsp set filetype=html.jsp
 autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
 
 set number
