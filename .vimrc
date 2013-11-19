@@ -15,6 +15,27 @@ set fileencodings=utf-8,gbk,gb18030,gb2312
 colorscheme blackboard       " 适合Ruby开发的蓝色主题
 "colorscheme railscasts
 
+let mapleader = ","
+if exists(":Tabularize")
+    nmap <Leader>b= :Tabularize /=<CR>
+    vmap <Leader>b= :Tabularize /=<CR>
+    nmap <Leader>b- :Tabularize /:\zs<CR>
+    vmap <Leader>b- :Tabularize /:\zs<CR>
+endif
+
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+
+function! s:align()
+    let p = '^\s*|\s.*\s|\s*$'
+    if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+        let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+        let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+        Tabularize/|/l1
+        normal! 0
+        call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+    endif
+endfunction
+
 set hidden
 
 " An example for a vimrc file.
