@@ -33,6 +33,8 @@
 - msanders/snipmate.vim
 - tpope/vim-pathogen
 - vim-ruby/vim-ruby
+- vim-scripts/taglist.vim
+- panozzaj/vim-autocorrect
 
 snipmate-snippets replaced original snippets in snipate. Used `rake` to install.
 
