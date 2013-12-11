@@ -12,7 +12,11 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set fileencodings=utf-8,gbk,gb18030,gb2312
-colorscheme blackboard       " 适合Ruby开发的蓝色主题
+set fdm=syntax
+set nofoldenable
+set linebreak
+"colorscheme solarized
+"colorscheme blackboard       " 适合Ruby开发的蓝色主题
 "colorscheme railscasts
 
 let mapleader = ","
