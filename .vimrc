@@ -18,10 +18,13 @@ set linebreak
 set laststatus=2
 set t_Co=256
 set noshowmode
-" let g:airline_theme=solarized
+syntax enable
+" let g:airline_powerline_fonts = 1
+" let g:airline_theme="solarized"
 " set background=dark
 " colorscheme solarized
-"colorscheme blackboard       " 适合Ruby开发的蓝色主题
+" let g:solarized_termcolors=256
+" colorscheme blackboard       " 适合Ruby开发的蓝色主题
 "colorscheme railscasts
 
 let mapleader = ","
