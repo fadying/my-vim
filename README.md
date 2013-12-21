@@ -12,6 +12,10 @@
 	git clone git://github.com/apenwarr/git-subtree.git
 	sudo bash git-subtree/install.sh
 
+### Install PowerLine symbols
+
+visit [powerline-fonts][powerline-fonts]
+
 ## Usage
 
     cd $HOME
@@ -55,3 +59,4 @@ snipmate-snippets replaced original snippets in snipate. Used `rake` to install.
 [vim-ruby]: https://github.com/vim-ruby/vim-ruby
 [taglist.vim]: https://github.com/vim-scripts/taglist.vim
 [vim-autocorrect]: https://github.com/panozzaj/vim-autocorrect
+[powerline-fonts]: https://github.com/Lokaltog/powerline-fonts

@@ -5,6 +5,7 @@ call pathogen#helptags()
 autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
 autocmd BufNewFile,BufRead *.jsp set filetype=html.jsp
 autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
+source ~/.vim/cscope_maps.vim
 
 set number
 set tabstop=4
@@ -17,15 +18,19 @@ set nofoldenable
 set linebreak
 set laststatus=2
 set t_Co=256
-set noshowmode
 syntax enable
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 " let g:airline_theme="solarized"
 " set background=dark
 " colorscheme solarized
 " let g:solarized_termcolors=256
-" colorscheme blackboard       " 适合Ruby开发的蓝色主题
-"colorscheme railscasts
+
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+
+nnoremap H :bp<CR>
+nnoremap L :bn<CR>
+nnoremap <C-H> :cp<CR>
+nnoremap <C-L> :cn<CR>
 
 let mapleader = ","
 if exists(":Tabularize")
@@ -80,7 +85,7 @@ if has("vms")
 endif
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
-" set showcmd		" display incomplete commands
+set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
