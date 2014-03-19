@@ -8,8 +8,8 @@ autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
 source ~/.vim/cscope_maps.vim
 
 set number
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set autoindent
 set fileencodings=utf-8,gbk,gb18030,gb2312
@@ -17,13 +17,12 @@ set fdm=syntax
 set nofoldenable
 set linebreak
 set laststatus=2
-set t_Co=256
 syntax enable
+set t_Co=256
+set background=dark
+colorscheme solarized
+let g:airline_theme="solarized"
 let g:airline_powerline_fonts = 1
-" let g:airline_theme="solarized"
-" set background=dark
-" colorscheme solarized
-" let g:solarized_termcolors=256
 
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
@@ -31,13 +30,14 @@ nnoremap H :bp<CR>
 nnoremap L :bn<CR>
 nnoremap <C-H> :cp<CR>
 nnoremap <C-L> :cn<CR>
+vnoremap <C-C> "+y
 
-let mapleader = ","
+" let mapleader = ","
 if exists(":Tabularize")
     nmap <Leader>b= :Tabularize /=<CR>
-    vmap <Leader>b= :Tabularize /=<CR>
+    vnoremap <Leader>b= :Tabularize /=<CR>
     nmap <Leader>b- :Tabularize /:\zs<CR>
-    vmap <Leader>b- :Tabularize /:\zs<CR>
+    vnoremap <Leader>b- :Tabularize /:\zs<CR>
 endif
 
 inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
