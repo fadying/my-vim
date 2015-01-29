@@ -2,18 +2,18 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-autocmd BufNewFile,BufRead *.html.erb set filetype=html.eruby
-autocmd BufNewFile,BufRead *.jsp set filetype=html.jsp
+autocmd BufNewFile,BufRead *.html.erb set filetype=eruby
+autocmd BufNewFile,BufRead *.jsp set filetype=jsp
 autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
 source ~/.vim/cscope_maps.vim
 
 set tags=/ouyang/Sources/axel-2.4/tags;
-set autochdir
+" set autochdir
 
 set number
-set tabstop=4
-set shiftwidth=4
-" set expandtab
+set tabstop=2
+set shiftwidth=2
+set expandtab
 set autoindent
 set fileencodings=utf-8,gbk,gb18030,gb2312
 set fdm=syntax
