@@ -2,12 +2,10 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-autocmd BufNewFile,BufRead *.html.erb set filetype=eruby
-autocmd BufNewFile,BufRead *.jsp set filetype=jsp
-autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
-source ~/.vim/cscope_maps.vim
+" autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
+" source ~/.vim/cscope_maps.vim
 
-set tags=/ouyang/Sources/axel-2.4/tags;
+" set tags=/ouyang/Sources/axel-2.4/tags;
 " set autochdir
 
 set number
@@ -21,11 +19,10 @@ set nofoldenable
 set linebreak
 set laststatus=2
 syntax enable
-set t_Co=256
+" set t_Co=256
 set background=dark
 colorscheme solarized
-let g:airline_theme="solarized"
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
@@ -35,6 +32,7 @@ nnoremap L :bn<CR>
 nnoremap <C-H> :cp<CR>
 nnoremap <C-L> :cn<CR>
 vnoremap <C-C> "+y
+inoremap <C-V> <ESC>"+gPa
 
 " let mapleader = ","
 if exists(":Tabularize")
