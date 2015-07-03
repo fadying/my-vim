@@ -23,6 +23,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 " let g:airline_powerline_fonts = 1
+set paste
 
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 

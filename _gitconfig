@@ -1,0 +1,14 @@
+[user]
+	email = oys0818@163.com
+	name = fadying
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	s = status --short
+	st = status
+	p = log -p -1
+	l = log --pretty=format:\"%h - %an, %ar : %s\"
+	c = checkout --
+	r = reset HEAD
