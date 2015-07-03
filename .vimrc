@@ -24,7 +24,7 @@ syntax enable
 " colorscheme solarized
 colorscheme monokai
 " let g:airline_powerline_fonts = 1
-set paste
+" set paste # unknown setting, cannot use emmet and snipmate
 
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
