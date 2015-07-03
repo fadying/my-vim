@@ -20,8 +20,9 @@ set linebreak
 set laststatus=2
 syntax enable
 " set t_Co=256
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
+colorscheme monokai
 " let g:airline_powerline_fonts = 1
 set paste
 
