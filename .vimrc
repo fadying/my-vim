@@ -2,6 +2,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
+autocmd BufNewFile,BufRead *.json set ft=javascript
 " autocmd Filetype ruby,eruby source ~/.vim/ruby-macros.vim
 " source ~/.vim/cscope_maps.vim
 
