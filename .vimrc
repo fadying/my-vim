@@ -25,7 +25,9 @@ syntax enable
 " colorscheme solarized
 colorscheme monokai
 " let g:airline_powerline_fonts = 1
-" set paste # unknown setting, cannot use emmet and snipmate
+" set paste # use for paste to disable autoindent while pasting
+
+let g:js_ext_required=0 "react js
 
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
