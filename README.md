@@ -35,28 +35,38 @@ visit [powerline-fonts][powerline-fonts]
 
 ## Installed plugins for vim
 
-- [mattn/emmet-vim] [emmet-vim]
-- [scrooloose/snipmate-snippets] [snipmate-snippets]
-- [plasticboy/vim-markdown] [vim-markdown]
-- [tpope/vim-rails] [vim-rails]
-- [scooloose/nerdtree] [nerdtree]
-- [msanders/snipmate.vim] [snipmate.vim]
-- [tpope/vim-pathogen] [vim-pathogen]
-- [vim-ruby/vim-ruby] [vim-ruby]
-- [vim-scripts/taglist.vim] [taglist.vim]
-- [panozzaj/vim-autocorrect] [vim-autocorrect]
+- [mattn/emmet-vim]
+- [scrooloose/snipmate-snippets]
+- [plasticboy/vim-markdown]
+- [tpope/vim-rails]
+- [scrooloose/nerdtree]
+- [msanders/snipmate.vim]
+- [tpope/vim-pathogen]
+- [vim-ruby/vim-ruby]
+- [vim-scripts/taglist.vim]
+- [panozzaj/vim-autocorrect]
+- [sickill/vim-monokai]
+- [ctrlpvim/ctrlp.vim]
+- [terryma/vim-expand-region]
+- [tpope/vim-surround]
+- [mileszs/ack.vim]
 
 snipmate-snippets replaced original snippets in snipate. Used `rake` to install.
 
 
-[emmet-vim]: https://github.com/mattn/emmet-vim
-[snipmate-snippets]: https://github.com/scrooloose/snipmate-snippets
-[vim-markdown]: https://github.com/plasticboy/vim-markdown
-[vim-rails]: https://github.com/tpope/vim-rails
-[nerdtree]: https://github.com/scrooloose/nerdtree
-[snipmate.vim]: https://github.com/msanders/snipmate.vim
-[vim-pathogen]: https://github.com/tpope/vim-pathogen
-[vim-ruby]: https://github.com/vim-ruby/vim-ruby
-[taglist.vim]: https://github.com/vim-scripts/taglist.vim
-[vim-autocorrect]: https://github.com/panozzaj/vim-autocorrect
-[powerline-fonts]: https://github.com/Lokaltog/powerline-fonts
+[mattn/emmet-vim]: https://github.com/mattn/emmet-vim
+[scrooloose/snipmate-snippets]: https://github.com/scrooloose/snipmate-snippets
+[plasticboy/vim-markdown]: https://github.com/plasticboy/vim-markdown
+[tpope/vim-rails]: https://github.com/tpope/vim-rails
+[scrooloose/nerdtree]: https://github.com/scrooloose/nerdtree
+[msanders/snipmate.vim]: https://github.com/msanders/snipmate.vim
+[tpope/vim-pathogen]: https://github.com/tpope/vim-pathogen
+[vim-ruby/vim-ruby]: https://github.com/vim-ruby/vim-ruby
+[vim-scripts/taglist.vim]: https://github.com/vim-scripts/taglist.vim
+[panozzaj/vim-autocorrect]: https://github.com/panozzaj/vim-autocorrect
+[Lokaltog/powerline-fonts]: https://github.com/Lokaltog/powerline-fonts
+[sickill/vim-monokai]: https://github.com/sickill/vim-monokai
+[ctrlpvim/ctrlp.vim]: https://github.com/ctrlpvim/ctrlp.vim
+[terryma/vim-expand-region]: https://github.com/terryma/vim-expand-region
+[tpope/vim-surround]: https://github.com/tpope/vim-surround
+[mileszs/ack.vim]: https://github.com/mileszs/ack.vim
