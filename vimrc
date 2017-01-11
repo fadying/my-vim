@@ -24,16 +24,18 @@ syntax enable
 " set background=dark
 " colorscheme solarized
 colorscheme monokai
-" let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1
 " set paste # use for paste to disable autoindent while pasting
-
 let g:js_ext_required=0 "react js
+let g:airline#extensions#whitespace#enabled = 0
 
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 
 nnoremap gr :Rgrep<CR><CR>
 nnoremap H :bp<CR>
 nnoremap L :bn<CR>
+nnoremap K <Plug>(expand_region_expand)
+nnoremap J <Plug>(expand_region_shrink)
 nnoremap <C-H> :cp<CR>
 nnoremap <C-L> :cn<CR>
 vnoremap <C-C> "+y
